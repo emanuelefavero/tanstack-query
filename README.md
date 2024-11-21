@@ -16,3 +16,7 @@ This repository shows how to use the TanStack Query library with Next.js
 - [TanStack Query](https://tanstack.com/query/latest)
 - [Next.js](https://nextjs.org/)
 - [React Query](https://react-query.tanstack.com/)
+
+## License
+
+- [MIT](LICENSE.md)
