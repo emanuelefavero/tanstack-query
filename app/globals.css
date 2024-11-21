@@ -19,4 +19,5 @@ body {
   background: var(--background);
   font-family: -apple-system, 'Helvetica Neue', Helvetica, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  padding: 1rem;
 }
