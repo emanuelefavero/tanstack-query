@@ -1,15 +1,13 @@
 'use client'
 
 import { useQuery } from '@tanstack/react-query'
-import type { IUser } from './types'
+import { getUsers } from '../api'
+import type { IUser } from '../types'
 
 export default function Component() {
   const { isPending, error, data, isFetching } = useQuery({
-    queryKey: ['usersData'],
-    queryFn: async () => {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users')
-      return await response.json()
-    },
+    queryKey: ['users'],
+    queryFn: getUsers,
   })
 
   if (isPending) return <div>Loading...</div>
