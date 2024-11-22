@@ -24,12 +24,12 @@ export default function Component() {
   // Render Create User
   return (
     <>
-      <p className='max-w-prose'>
+      <p className='mb-2 mt-3 max-w-prose'>
         Note: This is a mock API (json placeholder) so the user will not
         actually be created but you can still see the mutation in action.
       </p>
       <button
-        className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700'
+        className='mt-3 rounded-md bg-orange-500 px-4 py-2 font-bold text-white hover:bg-orange-700'
         type='submit'
         onClick={() => {
           mutation.mutate({

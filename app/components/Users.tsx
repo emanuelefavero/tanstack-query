@@ -15,7 +15,7 @@ export default function Component() {
   if (error) return 'An error has occurred: ' + error.message
 
   return (
-    <>
+    <div className='mt-3'>
       {data.map((user: IUser) => (
         <div key={user.id}>
           <h2 className='text-xl font-bold'>{user.name}</h2>
@@ -24,6 +24,6 @@ export default function Component() {
       ))}
 
       <div>{isFetching ? 'Updating...' : ''}</div>
-    </>
+    </div>
   )
 }
