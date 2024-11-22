@@ -24,6 +24,10 @@ export default function Component() {
   // Render Create User
   return (
     <>
+      <p className='max-w-prose'>
+        Note: This is a mock API (json placeholder) so the user will not
+        actually be created but you can still see the mutation in action.
+      </p>
       <button
         className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700'
         type='submit'
