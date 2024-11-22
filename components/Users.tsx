@@ -1,7 +1,7 @@
 'use client'
 
-import { getUsers } from '@/app/api'
-import type { IUser } from '@/app/types'
+import type { IUser } from '@/types'
+import { getUsers } from '@/utils/api'
 import { useQuery } from '@tanstack/react-query'
 
 export default function Component() {

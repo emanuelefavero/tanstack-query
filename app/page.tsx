@@ -1,8 +1,8 @@
 'use client'
 
+import CreateUser from '@/components/CreateUser'
+import Users from '@/components/Users'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import CreateUser from './components/CreateUser'
-import Users from './components/Users'
 
 const queryClient = new QueryClient()
 

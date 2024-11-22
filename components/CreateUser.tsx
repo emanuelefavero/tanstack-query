@@ -1,6 +1,6 @@
 'use client'
 
-import { createUser } from '@/app/api'
+import { createUser } from '@/utils/api'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
 export default function Component() {
