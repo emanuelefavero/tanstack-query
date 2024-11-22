@@ -21,7 +21,6 @@ export default function Component() {
     },
   })
 
-  // Render Create User
   return (
     <>
       <p className='mb-2 mt-3 max-w-prose'>
@@ -29,9 +28,16 @@ export default function Component() {
         actually be created but you can still see the mutation in action.
       </p>
       <button
-        className='mt-3 rounded-md bg-orange-500 px-4 py-2 font-bold text-white hover:bg-orange-700'
+        className={`mt-3 rounded-md px-4 py-2 font-bold text-white ${
+          mutation.isPending
+            ? 'cursor-not-allowed bg-zinc-400 opacity-80'
+            : mutation.isSuccess
+              ? 'bg-green-500'
+              : 'bg-orange-500'
+        }`}
         type='submit'
         onClick={() => {
+          // Create user (in a real application you would use a form and pass the form data to the mutation)
           mutation.mutate({
             id: Date.now(),
             name: 'John Doe',
