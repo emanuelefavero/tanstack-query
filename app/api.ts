@@ -12,7 +12,7 @@ export async function getUser(id: number) {
   return await response.json()
 }
 
-export async function postUser(user: IUser) {
+export async function createUser(user: IUser) {
   const response = await fetch('https://jsonplaceholder.typicode.com/users', {
     method: 'POST',
     headers: {
