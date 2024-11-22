@@ -19,6 +19,9 @@ export default function Component() {
         mutation.reset()
       }, 2000)
     },
+    onError: (error) => {
+      console.error('An error occurred:', error)
+    },
   })
 
   return (
