@@ -1,8 +1,8 @@
 'use client'
 
+import { getUsers } from '@/app/api'
+import type { IUser } from '@/app/types'
 import { useQuery } from '@tanstack/react-query'
-import { getUsers } from '../api'
-import type { IUser } from '../types'
 
 export default function Component() {
   const { isPending, error, data, isFetching } = useQuery({
